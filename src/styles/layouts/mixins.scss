@@ -1,0 +1,28 @@
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+@mixin cal_height() {
+  height: calc(100vh - 60px);
+  min-height: 500px;
+}
+
+@mixin rotate($degree: -90deg) {
+  /* Safari */
+-webkit-transform: rotate($degree);
+transform: rotate($degree);
+/* Firefox */
+-moz-transform: rotate($degree);
+/* IE */
+-ms-transform: rotate($degree);
+/* Opera */
+-o-transform: rotate($degree);
+
+
+}
