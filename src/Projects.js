@@ -122,7 +122,11 @@ class Projects extends Component {
                }}
                 />
                 <div id="the_hand" className="updown">
+<<<<<<< HEAD
                   <Fade bottom delay={450} duration={1200} fraction={0} step={this.step.is('txt_bottom')}>
+=======
+                  <Fade bottom delay={450} duration={1200} step={this.step.is('txt_bottom')}>
+>>>>>>> e66b42af0f9c3fd4b2074905dfac7ca20678b227
                     <span className="handpointing rotate_down"></span>
                   </Fade>
                 </div>

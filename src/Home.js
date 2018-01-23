@@ -25,10 +25,16 @@ class Home extends Component {
             <Fade bottom delay={400} duration={1200} step={this.step.is('title')} className="circle_fix">
               <span className="circle_art">
                 <i>
+<<<<<<< HEAD
                   <Typist className="typing_text" avgTypingSpeed={100} startDelay={2000} cursor={{
                     hideWhenDone: true,
                     show: true,
                     blink: true,
+=======
+                  <Typist className="typing_text" avgTypingSpeed={100} startDelay={1800} cursor={{
+                    hideWhenDone: true,
+                    show: true,
+>>>>>>> e66b42af0f9c3fd4b2074905dfac7ca20678b227
                     hideWhenDoneDelay: 100
                   }}>
                     <span>Hello</span>
