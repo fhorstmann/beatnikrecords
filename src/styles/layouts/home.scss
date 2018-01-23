@@ -1,0 +1,92 @@
+
+
+.home {
+  height: calc(100vh - 0px);
+  min-height: 500px;
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+  footer {
+    display: none;
+  }
+}
+
+
+.intro {
+  @include vertical-align();
+  h1 {
+    margin: 0;
+    font-size: 10vw;
+    line-height: 0.9;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    small {
+      display: block;
+      text-align: right;
+      font-size:4vw;
+      font-weight: 100;
+    }
+    .circle_fix {
+      display: inline-block;
+      float: right;
+      padding-bottom: 3px;
+    }
+    .circle_art {
+      position: relative;
+      background:$red;
+      display: inline-block;
+      text-align: center;
+      float: right;
+      margin: 20px 0 0;
+      overflow: visible;
+      border-radius: 50%;
+      width: 12vw;
+      height: 12vw;
+      min-width: 120px;
+      min-height: 120px;
+      max-width: 290px;
+      max-height: 290px;
+      i {
+        @include vertical-align();
+        font-size: 3.5vw;
+        font-weight: 700;
+        display: block;
+        letter-spacing: -2px;
+        font-style: normal;
+        color: #6f0f00;
+
+      }
+    }
+  }
+}
+
+.cta_bottom {
+  position: absolute;
+  bottom: 20px;
+  .entry-wrap {
+    h2 {
+      margin: 0;
+      font-weight: bold;
+      font-size:5em;
+      line-height: 0.9;
+      text-transform: uppercase;
+    }
+    small {
+      font-weight: 100;
+      font-size: .5em;
+      display: block;
+
+    }
+    .rotate {
+      @include rotate($degree: 90deg);
+      display: inline-block;
+      color: $red;
+      font-size: 26px;
+        position: relative;
+        top: -19px;
+        left: -15px;
+        font-weight: 400;
+    }
+  }
+}

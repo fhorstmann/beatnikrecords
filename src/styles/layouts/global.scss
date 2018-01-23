@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900');
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+$drk: #202103;
+$red: #e53317;
+$yellow: #ffdd00;
+
+html,
+body,
+ {
+    background: $yellow;
+    height: 100%;
+    width: 100%;
+    color: $drk;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+@media (min-width: 1600px) {
+.container {
+    max-width: 1260px;
+  }
+}
+
+
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button:focus {
+    outline: none;
+
+}
+
+.animated-page-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .page {
+      padding: 0 15px;
+    }
+}
+
+  .noise {
+    background: url(https://en.studiogusto.com/public/assets/img/noise.gif);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    pointer-events: none;
+    opacity: .05;
+  }
+
+
+
+main {
+  position: relative;
+    .inner-container {
+      max-width: 80%;
+    }
+}
+
+.fixed_info {
+      right: 30px;
+      top: 30px;
+      position: fixed;
+      border: 1px dashed $drk;
+      padding: 5px;
+  .entry {
+    padding: 0;
+    color: $drk;
+    .red_bar {
+      background: $red;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 1px 10px;
+      color: $drk;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    time {
+      font-size: 9vw;
+      line-height: 0.8;
+      font-weight: 700;
+      color:$drk;
+      text-align: justify;
+      letter-spacing: normal;
+      position: relative;
+      top: 1px;
+    }
+    .meta_info {
+      margin-top: 10px;
+      border-bottom: 1px dashed $drk;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      a {
+        color: $drk;
+        font-weight: 400;
+      }
+      &.last {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.react-reveal {
+
+    opacity: 0;
+}
+
+.fade-enter {
+    opacity: 0.01;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+ }
+
+  .fade-exit {
+    opacity: 1;
+    &:after {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffdd00+0,fff08e+44,fffae0+100 */
+  background: #ffdd00; /* Old browsers */
+  background: -moz-linear-gradient(left, #ffdd00 0%, #fff08e 44%, #fffae0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffdd00 0%,#fff08e 44%,#fffae0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffdd00 0%,#fff08e 44%,#fffae0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdd00', endColorstr='#fffae0',GradientType=1 ); /* IE6-9 */
+    z-index: 100;
+    content: "";
+    transition: left 1s cubic-bezier(.77,0,.175,1);
+}
+
+.section-title {
+
+}
+
+  }
+
+  .fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 700ms ease-in;
+
+    .section-title {
+
+    }
+  }
+/*
+* `classNames="fade"` applies `fade-enter`, `fade-enter-active`,
+* `fade-exit`, `fade-exit-active`, `fade-appear`, and `fade-appear-active`.
+* Each individual classNames can also be specified independently like:
+classNames={{
+   *  appear: 'my-appear',
+   *  appearActive: 'my-active-appear',
+   *  enter: 'my-enter',
+   *  enterActive: 'my-active-enter',
+   *  exit: 'my-exit',
+   *  exitActive: 'my-active-exit',
+   * }}
+*/
+
+
+h1, h2, h3, h4, {
+    color:$drk;
+}
+
+
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  zIndex: 1;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
+//menu
+.menu_circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: $red;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: inline-block;
+  text-align: center;
+  display: none;
+
+  span {
+    line-height: 65px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $drk;
+
+  }
+}
+
+.top-bar {
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 62px;
+    width: 100%;
+    padding: 0;
+    z-index: 10;
+    transform: translateY(0);
+    transition: all 0.1s ease-in-out;
+    &.go_away {
+      transform: translateY(-100%);
+      top: 0px;
+    }
+
+    a {
+
+        color:$drk;
+        text-decoration: none;
+        font-weight: 500;
+        &.active {
+          //  text-decoration: line-through;
+
+        }
+    }
+}
+
+
+
+
+.misseds {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  //background: url("rdit.gif") no-repeat;
+
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
+
+//NavLink
+.top-bar {
+  .nav {
+    margin: 18px 0 0;
+  }
+  a {
+
+    span {
+      position: relative;
+      z-index: 2;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      -webkit-transition-timing-function: cubic-bezier(0, .45, .4, .99);
+      transition-timing-function: cubic-bezier(0, .45, .4, .99);
+    }
+  &.brand {
+      background: url(../images/logo.svg) 0 0 no-repeat;
+      background-size: 60px 60px;
+      width: 60px;
+      height: 60px;
+      position: relative;
+      display: inline-block;
+      text-indent: -9999em;
+      top: 0;
+      float: left;
+      margin-right: 30px;
+    }
+  }
+
+  .link-anim {
+    position: relative;
+    overflow: hidden;
+    margin-right: 25px;
+  }
+
+  .link-anim a:hover:before {
+      -webkit-animation: b .3s;
+      animation: b .3s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      left: 0;
+      opacity: 1;
+  }
+  .link-anim a:before {
+      content: ' ';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 1px;
+      background-color: $drk;
+      z-index: 1;
+      opacity: 0;
+      -webkit-animation: c .3s;
+      animation: c .3s;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      -webkit-animation-timing-function: cubic-bezier(.9, .07, .08, .935);
+      animation-timing-function: cubic-bezier(.9, .07, .08, .935);
+  }
+  .link-anim a.active:before {
+      -webkit-animation: b .3s;
+      animation: b .3s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      left: 0;
+      opacity: 1;
+  }
+  @-moz-keyframes b {
+      0% {
+          transform: translate3d(-100%, 0, 0)
+      }
+      to {
+          transform: translateZ(0)
+      }
+  }
+  @-webkit-keyframes b {
+      0% {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0)
+      }
+      to {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0)
+      }
+  }
+  @-o-keyframes b {
+      0% {
+          transform: translate3d(-100%, 0, 0)
+      }
+      to {
+          transform: translateZ(0)
+      }
+  }
+  @keyframes b {
+      0% {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0)
+      }
+      to {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0)
+      }
+  }
+  @-moz-keyframes c {
+      0% {
+          transform: translateZ(0)
+      }
+      to {
+          transform: translate3d(100%, 0, 0)
+      }
+  }
+  @-webkit-keyframes c {
+      0% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0)
+      }
+      to {
+          -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0)
+      }
+  }
+  @-o-keyframes c {
+      0% {
+          transform: translateZ(0)
+      }
+      to {
+          transform: translate3d(100%, 0, 0)
+      }
+  }
+  @keyframes c {
+      0% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0)
+      }
+      to {
+          -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0)
+      }
+  }
+
+
+}
+
+
+@media (max-width: 768px) {
+.info_col {
+  display: none;
+}
+
+}

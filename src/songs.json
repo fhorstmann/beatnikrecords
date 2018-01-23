@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Give It To Me Baby",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/give-it-to-me-baby",
+        "released": "December 25, 2015",
+        "image": "allen_gingsberg.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "Hated it",
+                "body": "This movie is dumb!",
+                "author": "John Pete"
+            }
+        ]
+    },
+    {
+        "id": 93,
+        "name": "One Day",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/one-day-youll-be",
+        "released": "October 23, 1992",
+        "image": "dave_brubeck_1.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "Tarantino does it again!",
+                "body": "If this movie got stuck in our laserdisk player, I wouldn't mind!",
+                "author": "Rex Guy"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Blues Man",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/blues-man",
+        "released": "May 11, 2012",
+        "image": "dylan-and-baez-6.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "About sums up feelings about Trump",
+                "body": "I like the ideals of this movie",
+                "author": "Barbara Sand"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "MLK",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/mlk",
+        "released": "April 20, 1977",
+        "image": "jimi-hendrix.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "Man...",
+                "body": "New York back then looks awesome!",
+                "author": "Jason Shiblony"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "You Here With Me",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/you-here-with-me",
+        "released": "February 25, 1920",
+        "image": "allen_gingsberg.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "Spooky",
+                "body": "I couldn't keep my eyes open!",
+                "author": "Bob Hope"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Home To Me",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/youre-home-to-me",
+        "released": "March 3rd, 1922",
+        "image": "allen_gingsberg.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "Theres no light in sight",
+                "body": "After watching this film and clenching my eyes, I can no longer open them",
+                "author": "Eyesless Guy"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Crazy (cover)",
+        "resolveUrl": "https://soundcloud.com/freddiehorstmann/crazy-cover-gb-1",
+        "released": "October 2, 1965",
+        "image": "allen_gingsberg.jpg",
+        "description": "",
+        "reviews": [
+            {
+                "title": "Almost gave me a heartattack",
+                "body": "My apple watch told me my heart rate was sitting at 165 while watching this film.",
+                "author": "Tim Sham"
+            }
+        ]
+    }
+]
