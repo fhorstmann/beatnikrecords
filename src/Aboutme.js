@@ -3,7 +3,6 @@ import Waypoint from 'react-waypoint';
 import Fade from 'react-reveal/Fade';
 import Stepper from 'react-reveal/Stepper';
 //<img alt="hello" src={require('./images/new_logo.svg')} />
-
   class About_me extends Component {
     constructor(props) {
       super(props);
@@ -41,35 +40,36 @@ import Stepper from 'react-reveal/Stepper';
                 Me
               </Fade>
             </h1>
-            <Fade bottom delay={450} duration={500} step={this.step.is('b_bottom')} style={{
-              display: 'block'
-            }} className="border-bottom">hello</Fade>
-              <Waypoint onLeave={({event }) => {
-              // do something useful!
-              console.log("going down");
-              const el = document.getElementById('the_hand');
-                if(el) {
-                  el.className += ' rotate_it';
-                }
-              }} onEnter={({event }) => {
-              // do something useful!
-              const el = document.getElementById('the_hand');
-              console.log("going up");
-              if (el.classList.contains("rotate_it")) {
-                // Has my-class in it
-                console.log("has class");
-                el.classList.remove("rotate_it");
-              } else {
-                  // No my-class :(
+            <div>
+              <Fade bottom delay={450} duration={500} step={this.step.is('b_bottom')} style={{
+                display: 'block'
+              }} className="border-bottom">hello</Fade>
+            </div>
+            <Waypoint onLeave={({event }) => {
+            // do something useful!
+            //console.log("going down");
+            const el = document.getElementById('the_hand');
+              if(el) {
+                el.className += ' rotate_it';
               }
-               //el.className.remove("rotate_it");
-             }}
-              />
-              <div id="the_hand" className="updown">
-                <Fade bottom delay={450} duration={1200} step={this.step.is('txt_bottom')}>
-                  <span className="handpointing rotate_down"></span>
-                </Fade>
-              </div>
+            }} onEnter={({event }) => {
+            // do something useful!
+            const el = document.getElementById('the_hand');
+            //console.log("going up");
+            if (el.classList.contains("rotate_it")) {
+              // Has my-class in it
+              //console.log("has class");
+              el.classList.remove("rotate_it");
+            } else {
+                // No class :(
+            }
+           }}
+            />
+            <div id="the_hand" className="updown">
+              <Fade bottom delay={1400} duration={1200} fraction={0} force={true}>
+                <span className="handpointing rotate_down">This Way!</span>
+              </Fade>
+            </div>
           </div>
         </div>
         <section className="intro_section">
@@ -78,7 +78,7 @@ import Stepper from 'react-reveal/Stepper';
               <Fade bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
               <div className="entry intro_copy">
                 <p>
-                  <span className="drop_cap">i</span>like to know how things work. Whether it's a website or a washing machine, I'll pick it apart until the purpose of each piece becomes clear, then put it back together again. I've spent seven years deconstructing the web, thousands of hours analyzing every POST and GET, from back-end to front-end and back again.
+            <span className="drop_cap">i</span>like to know how things work. Whether it's a website or a washing machine, I'll pick it apart until the purpose of each piece becomes clear, then put it back together again. I've spent seven years deconstructing the web, thousands of hours analyzing every POST and GET, from back-end to front-end and back again.
                 </p>
               </div>
                 </Fade>

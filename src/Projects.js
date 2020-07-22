@@ -48,7 +48,7 @@ class Projects extends Component {
           outputRange: ["12px", "0px"]})},0)`
         };
         return (
-          <Fade duration={1000} onReveal={() => revealFunc('element revealed')} key={post.id} id="post" className={`col-12 col-md-6 offset-md-${index > 5
+          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post" className={`col-12 col-md-6 offset-md-${index > 5
             ? `${index - 4}`
             : `${index + 0}`}`}>
             <Animated.div style={style}>
@@ -63,9 +63,14 @@ class Projects extends Component {
                 </div>
                 <div className="count">
                   <span>№ {index + 1}.</span>
-                    <img className="img-fluid" alt={post.title.rendered} src={`https://frhdesigns.com/${post.better_featured_image.source_url}`}/>
+
+                      <img className="img-fluid" alt={post.title.rendered}
+                          src={`https://frhdesigns.com/${post.better_featured_image.source_url}`}
+                          />
+
                 </div>
               </Link>
+              <a class="block__title" data-img="img/1.jpg">Effect 1</a>
             </Animated.div>
           </Fade>
         );})
@@ -122,12 +127,8 @@ class Projects extends Component {
                }}
                 />
                 <div id="the_hand" className="updown">
-<<<<<<< HEAD
-                  <Fade bottom delay={450} duration={1200} fraction={0} step={this.step.is('txt_bottom')}>
-=======
-                  <Fade bottom delay={450} duration={1200} step={this.step.is('txt_bottom')}>
->>>>>>> e66b42af0f9c3fd4b2074905dfac7ca20678b227
-                    <span className="handpointing rotate_down"></span>
+                  <Fade bottom delay={1400} duration={1200} fraction={0} force={true}>
+                    <span className="handpointing rotate_down">This Way!</span>
                   </Fade>
                 </div>
               </div>

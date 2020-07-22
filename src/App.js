@@ -48,7 +48,7 @@ const App = ({ location }) => {
       <time>{Moment(CurrentDate).format('DD')}.</time>
         <div className="red_bar">{Moment(CurrentDate).format('Y')}</div>
         <div className="meta_info">{Moment(CurrentDate).format('HH:mm:ss')}</div>
-        <div className="meta_info last"><b>E:</b> <a href="mailto:freddie.horstmann@gmail.com?Subject=Hello" target="_top">Email Me</a></div>
+        <div className="meta_info last"><b>E:</b> <a href="mailto:freddie.horstmann@gmail.com?Subject=Hello" target="_top">Contact Me</a></div>
       </div>
     </aside>
         </div>

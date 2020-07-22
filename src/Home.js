@@ -18,24 +18,19 @@ class Home extends Component {
           <h1>
             <Fade bottom delay={300} duration={1200} step={this.step.is('title')} style={{
               display: 'inline-block'
-            }}>Manifesto</Fade>
+            }}>Greater Than</Fade>
             <small>
-              <Fade top delay={350} duration={1200} step={this.step.is('title')}>Lorem</Fade>
+              <Fade top delay={350} duration={1200} step={this.step.is('title')}>Nice</Fade>
             </small>
             <Fade bottom delay={400} duration={1200} step={this.step.is('title')} className="circle_fix">
               <span className="circle_art">
                 <i>
-<<<<<<< HEAD
                   <Typist className="typing_text" avgTypingSpeed={100} startDelay={2000} cursor={{
-                    hideWhenDone: true,
                     show: true,
                     blink: true,
-=======
-                  <Typist className="typing_text" avgTypingSpeed={100} startDelay={1800} cursor={{
+                    element: '',
                     hideWhenDone: true,
-                    show: true,
->>>>>>> e66b42af0f9c3fd4b2074905dfac7ca20678b227
-                    hideWhenDoneDelay: 100
+                    hideWhenDoneDelay: 100,
                   }}>
                     <span>Hello</span>
                     <Typist.Backspace count={8} delay={400}/>
@@ -44,8 +39,10 @@ class Home extends Component {
                     <span>Hola</span>
                     <Typist.Backspace count={8} delay={400}/>
                     <span>Hallo</span>
-                    <Typist.Backspace count={8} delay={400} hideWhenDone={true}/>
+                    <Typist.Backspace count={8} delay={400}/>
                     <span>Jello</span>
+                    <Typist.Backspace count={8} delay={400} hideWhenDone={true}/>
+                    <span>(ツ)</span>
                   </Typist>
                 </i>
               </span>
