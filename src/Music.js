@@ -6,64 +6,75 @@ import songs from './songs.json';
 import Waypoint from 'react-waypoint';
 import Fade from 'react-reveal/Fade';
 import Stepper from 'react-reveal/Stepper';
+import ReactHover from 'react-hover'
+import './component.css'
 import $ from "jquery";
 //const clientId = '4530657cfd429e1c0396cf8a1a7ed39c';
 //const resolveUrl = 'https://soundcloud.com/freddiehorstmann/where-i-want-to-be';
 //const give_it_to_me_baby = 'https://soundcloud.com/freddiehorstmann/give-it-to-me-baby';
-/*
- <img className="img-fluid" alt={song.name} src={require(`./images/${song.image}`)} />
-*/
 
 const Player = withSoundCloudAudio(props => {
   let {track, currentTime} = props;
-
-  //let classes = classnames('specialbutton', {active: this.state.active});
   return (
     <div className="player">
-      <PlayButton onPlayClick={() => {
+      <PlayButton className="" onPlayClick={() => {
         console.log('play button clicked!');
       }} {...props}/>
-
       <Timer className="player-timer" duration={track
         ? track.duration / 1000
         : 0} currentTime={currentTime} {...props}/>
-
       <Progress className="progress_bar" {...props}/>
-
     </div>
   );
 });
 
 const Songs = withSoundCloudAudio(props => {
-  function onPlayClick() {
-    console.log('hello');
-  }
+  let optionsCursorTrueWithMargin = {
+    followCursor: true,
+    shiftX: 60,
+    shiftY: -300
+  };
   return (
     <section className="music-list">
       <div className="row wide-gutter">
         {songs.map((song, i) => (
-          <article key={i} id="post" className={`song-item col-12 col-md-4`}>
+          <article key={i} id="post" className={`song-item col-12`}>
             <div className="entry">
               <div className="entry-title">
-                <h3 dangerouslySetInnerHTML={{
-                  __html: song.name
-                }}/>
-                <Player onPlayClick={() => {
-                  console.log('play button clicked!');
-                }} clientId="4530657cfd429e1c0396cf8a1a7ed39c" resolveUrl={song.resolveUrl} onReady={() => $('.song-item').on('click', function() {
-                  $('.active').removeClass('active');
-                  $(this).addClass('active');
-                })}/>
-              </div>
-              <div className="count">
-                <span></span>
+                <ReactHover options={optionsCursorTrueWithMargin}>
+                    <ReactHover.Trigger type='trigger'>
+                          <div className="entry-title">
+                            <h3 dangerouslySetInnerHTML={{
+                              __html: song.name
+                            }}/>
+                          <time>Release Date: <b>{song.released}</b></time>
+
+                            </div>
+                    </ReactHover.Trigger>
+                <ReactHover.Hover type='hover'>
+                <div className="hover">
+                <img className="thumbnail img-fluid" src={require(`./images/${song.image}`)}/>
+                </div>
+                  </ReactHover.Hover>
+                    </ReactHover>
+              <Player onPlayClick={() => {
+                }} clientId="4530657cfd429e1c0396cf8a1a7ed39c" resolveUrl={song.resolveUrl} onReady={() =>
+                  $('.song-item').click( function(){
+                      if ( $(this).hasClass('active') ) {
+                          $(this).removeClass('active');
+                      } else {
+                        $('.song-item.active').removeClass('active');
+                        $(this).addClass('active');
+                      }
+                  })
+                }
+                />
               </div>
             </div>
           </article>
         ))}
       </div>
     </section>
-
   );
 }, this);
 
@@ -80,7 +91,6 @@ class Music extends React.Component {
       <div className="container">
         <div className="section-title">
           <div className="v-center">
-
             <h1 className="text-left">
               <Fade bottom cascade={50} delay={300} duration={500} step={this.step.is('title')} style={{
                 display: 'inline-block'
@@ -108,9 +118,9 @@ class Music extends React.Component {
             </Fade>
             </h1>
             <div>
-              <Fade bottom delay={450} duration={500} step={this.step.is('b_bottom')} style={{
+              <Fade fraction={0} force={true} bottom delay={600} duration={500} step={this.step.is('b_bottom')} style={{
                 display: 'block'
-              }} className="border-bottom">hello</Fade>
+              }} className="border-bottom">&nbsp;</Fade>
             </div>
               <Waypoint onLeave={({event }) => {
               // do something useful!
@@ -132,9 +142,11 @@ class Music extends React.Component {
               }
              }}
               />
-            <div id="the_hand" className="updown">
-              <span className="handpointing rotate_down"></span>
-            </div>
+              <div id="the_hand" className="updown">
+                <Fade bottom delay={1000} duration={1200} fraction={0} force={true}>
+                  <span className="handpointing rotate_down">&nbsp;</span>
+                </Fade>
+              </div>
           </div>
         </div>
         <section className="intro_section">
@@ -149,7 +161,6 @@ class Music extends React.Component {
           </div>
         </section>
         <Songs/>
-
       </div>
 
     );

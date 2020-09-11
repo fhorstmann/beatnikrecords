@@ -55,7 +55,7 @@ class ProjectItem extends Component {
         <div className="container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-12">
-              <div className="section-title">
+              <div className="section-title post-title">
                 <div className="v-center">
                     <h1 dangerouslySetInnerHTML={{
                         __html: this.state.post[0].title.rendered

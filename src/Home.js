@@ -42,7 +42,7 @@ class Home extends Component {
                     <Typist.Backspace count={8} delay={400}/>
                     <span>Jello</span>
                     <Typist.Backspace count={8} delay={400} hideWhenDone={true}/>
-                    <span>(ツ)</span>
+                    <span>⌐■-■</span>
                   </Typist>
                 </i>
               </span>

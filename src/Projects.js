@@ -6,9 +6,10 @@ import Waypoint from 'react-waypoint';
 import {Link} from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 import Stepper from 'react-reveal/Stepper';
+import ReactHover from 'react-hover'
+import './component.css'
 //import ScrollAnimation from 'react-animate-on-scroll';
 function revealFunc() {}
-
 class Projects extends Component {
   constructor(props) {
     super(...arguments, props);
@@ -46,32 +47,41 @@ class Projects extends Component {
             0, 1
           ],
           outputRange: ["12px", "0px"]})},0)`
+        }
+        let optionsCursorTrueWithMargin = {
+          followCursor: true,
+          shiftX: 60,
+          shiftY: -300
         };
+
         return (
-          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post" className={`col-12 col-md-6 offset-md-${index > 5
+          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post-item" className={`col-12 col-md-6 offset-md-${index > 5
             ? `${index - 4}`
             : `${index + 0}`}`}>
-            <Animated.div style={style}>
               <Link className="entry" to={`/projects/${post.slug}`}>
+              <ReactHover options={optionsCursorTrueWithMargin}>
+                  <ReactHover.Trigger type='trigger'>
                 <div className="entry-title">
                   <h3 dangerouslySetInnerHTML={{
-            __html: post.title.rendered
-          }}/>
-                  <span dangerouslySetInnerHTML={{
-                    __html: post.excerpt.rendered
-                  }}/>
+              __html: post.title.rendered
+              }}/>
+              <span dangerouslySetInnerHTML={{
+                          __html: post.excerpt.rendered
+                        }}/>
                 </div>
-                <div className="count">
-                  <span>№ {index + 1}.</span>
-
-                      <img className="img-fluid" alt={post.title.rendered}
-                          src={`https://frhdesigns.com/${post.better_featured_image.source_url}`}
-                          />
-
-                </div>
+                  <div className="count">
+                        <span>№ {index + 1}.</span>
+                      <img className="img-fluid d-none" alt={post.title.rendered}
+                          src={`https://frhdesigns.com/${post.better_featured_image.source_url}`}/>
+                          </div>
+                        </ReactHover.Trigger>
+                        <ReactHover.Hover type='hover'>
+                          <div className="hover">
+                            <img className="thumbnail img-fluid" alt="{post.title.rendered}" src={`https://frhdesigns.com/${post.better_featured_image.source_url}`} />
+                        </div>
+                    </ReactHover.Hover>
+                  </ReactHover>
               </Link>
-              <a class="block__title" data-img="img/1.jpg">Effect 1</a>
-            </Animated.div>
           </Fade>
         );})
       return (
@@ -80,55 +90,55 @@ class Projects extends Component {
             <div className="section-title">
               <div className="v-center">
                 <h1 className="text-left">
-                  <Fade bottom cascade={50} delay={300} duration={500} step={this.step.is('title')} style={{
+                  <Fade bottom cascade={50} delay={300} force={true} duration={500} step={this.step.is('title')} style={{
                     display: 'inline-block'
                   }}>
                     pr
                   </Fade>
-                  <Fade bottom delay={400} duration={500} step={this.step.is('title')} style={{
+                  <Fade bottom delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'inline-block'
                   }}>
                     <div className="mdash"></div>
                   </Fade>
-                  <Fade bottom cascade={50} delay={400} duration={500} step={this.step.is('title')} style={{
+                  <Fade bottom cascade={50} delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'block'
                   }}>
                     oj
                   </Fade>
-                  <Fade bottom cascade={50} delay={450} duration={500} step={this.step.is('title')} style={{
+                  <Fade bottom cascade={50} delay={450} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'block'
                   }}>
                     ects
                   </Fade>
                 </h1>
                 <div>
-                  <Fade bottom delay={450} duration={500} step={this.step.is('b_bottom')} style={{
+                  <Fade fraction={0} force={true} bottom delay={600} duration={500} step={this.step.is('b_bottom')} style={{
                     display: 'block'
-                  }} className="border-bottom">hello</Fade>
+                  }} className="border-bottom">&nbsp;</Fade>
                 </div>
                 <Waypoint onLeave={({event }) => {
-                // do something useful!
-                //console.log("going down");
-                const el = document.getElementById('the_hand');
-                  if(el) {
-                    el.className += ' rotate_it';
+                  // do something useful!
+                  //console.log("going down");
+                  const el = document.getElementById('the_hand');
+                    if(el) {
+                      el.className += ' rotate_it';
+                    }
+                  }} onEnter={({event }) => {
+                  // do something useful!
+                  const el = document.getElementById('the_hand');
+                  //console.log("going up");
+                  if (el.classList.contains("rotate_it")) {
+                    // Has my-class in it
+                    //console.log("has class");
+                    el.classList.remove("rotate_it");
+                  } else {
+                      // No class :(
                   }
-                }} onEnter={({event }) => {
-                // do something useful!
-                const el = document.getElementById('the_hand');
-                //console.log("going up");
-                if (el.classList.contains("rotate_it")) {
-                  // Has my-class in it
-                  //console.log("has class");
-                  el.classList.remove("rotate_it");
-                } else {
-                    // No class :(
-                }
                }}
                 />
                 <div id="the_hand" className="updown">
-                  <Fade bottom delay={1400} duration={1200} fraction={0} force={true}>
-                    <span className="handpointing rotate_down">This Way!</span>
+                  <Fade bottom delay={1000} duration={1200} fraction={0} force={true}>
+                    <span className="handpointing rotate_down">&nbsp;</span>
                   </Fade>
                 </div>
               </div>

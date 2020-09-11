@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 import Fade from 'react-reveal/Fade';
 import Stepper from 'react-reveal/Stepper';
+import Video from "./components/video";
 //<img alt="hello" src={require('./images/new_logo.svg')} />
   class About_me extends Component {
     constructor(props) {
@@ -10,7 +11,9 @@ import Stepper from 'react-reveal/Stepper';
         animations: []
       };
     this.step = new Stepper().step('title', 500).step('b_bottom', 100).step('txt_bottom', 300);
+
     }
+
     render() {
       return (
   <div className="page about_me">
@@ -19,31 +22,31 @@ import Stepper from 'react-reveal/Stepper';
         <div className="section-title">
           <div className="v-center">
             <h1 className="text-left">
-              <Fade bottom cascade={50} delay={300} duration={500} step={this.step.is('title')} style={{
+              <Fade bottom cascade={50} delay={300} duration={500} force={true} step={this.step.is('title')} style={{
                 display: 'inline-block'
               }}>
                 Ab
               </Fade>
-              <Fade bottom delay={400} duration={500} step={this.step.is('title')} style={{
+              <Fade bottom delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                 display: 'inline-block'
               }}>
                 <div className="mdash"></div>
               </Fade>
-              <Fade bottom cascade={50} delay={400} duration={500} step={this.step.is('title')} style={{
+              <Fade bottom cascade={50} delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                 display: 'block'
               }}>
                 out
               </Fade>
-              <Fade bottom cascade={50} delay={450} duration={500} step={this.step.is('title')} style={{
+              <Fade bottom cascade={50}  delay={450} duration={500} force={true} step={this.step.is('title')} style={{
                 display: 'block'
               }}>
-                Me
+                Us
               </Fade>
             </h1>
             <div>
-              <Fade bottom delay={450} duration={500} step={this.step.is('b_bottom')} style={{
+              <Fade fraction={0} force={true} bottom delay={600} duration={500} step={this.step.is('b_bottom')} style={{
                 display: 'block'
-              }} className="border-bottom">hello</Fade>
+              }} className="border-bottom">&nbsp;</Fade>
             </div>
             <Waypoint onLeave={({event }) => {
             // do something useful!
@@ -66,16 +69,93 @@ import Stepper from 'react-reveal/Stepper';
            }}
             />
             <div id="the_hand" className="updown">
-              <Fade bottom delay={1400} duration={1200} fraction={0} force={true}>
-                <span className="handpointing rotate_down">This Way!</span>
+              <Fade bottom delay={1000} duration={1200} fraction={0} force={true}>
+                <span className="handpointing rotate_down">&nbsp;</span>
               </Fade>
             </div>
           </div>
         </div>
         <section className="intro_section">
           <div className="row">
+            <div className="col-12 col-sm-12 col-md-6 offset-md-5 col-lg-5 offset-lg-6 mb-5">
+              <Fade force={true} bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
+              <div className="entry intro_copy">
+                <p>
+                  <span className="drop_cap">G</span>reater Than Nice (GTN) is used to describe something better than good. It's used to descibe something great. And that's exactly what we do in every project we have our hands on here at GTN. Not only do we excel at our craft, but we specialize in creating lastly relationships with our clients.
+                </p>
+                <p>
+                  A few clients GTN has the pleasure of working with and making their dreams come true.
+                </p>
+              </div>
+            </Fade>
+            </div>
+          </div>
+
+
+
+          <ul className="client-list-group row">
+            <div className="col-12 mt-5">
+                <Fade force={true} bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
+                <div className="entry intro_copy">
+                  <p>
+                    <span className="drop_cap">Our Clients</span>
+                    </p>
+                  </div>
+                    </Fade>
+                </div>
+            <li className="item col-6 col-sm-6 col-md-4">
+                  <Fade force={true} bottom delay={50} duration={700} step={this.step.is('txt_bottom')}>
+                <img className="img-fluid" alt="Ahlem" src={require('./images/ahlem-text-logo.svg')} />
+                  </Fade>
+              </li>
+              <li className="item col-6 col-sm-6 col-md-4 ">
+                <Fade  force={true} bottom delay={100} duration={700} step={this.step.is('txt_bottom')}>
+                  <img className="img-fluid" alt="Ahlem" src={require('./images/laa-logo.svg')} />
+                    </Fade>
+                </li>
+                  <li className="item col-6 col-sm-6 col-md-4">
+                      <Fade  force={true} bottom delay={250} duration={700} step={this.step.is('txt_bottom')}>
+                      <img className="img-fluid" alt="Ahlem" src={require('./images/everlane-logo.svg')} />
+                        </Fade>
+                    </li>
+                  <li className="item col-6 col-sm-6 col-md-4">
+                      <Fade  force={true} bottom delay={200} duration={700} step={this.step.is('txt_bottom')}>
+                      <img className="img-fluid" alt="Ahlem" src={require('./images/madefor-logo.svg')} />
+                        </Fade>
+                    </li>
+                    <li className="item col-6 col-sm-6 col-md-4">
+                        <Fade  force={true} bottom delay={150} duration={700} step={this.step.is('txt_bottom')}>
+                        <img className="img-fluid" alt="Ahlem" src={require('./images/ioan-logo.svg')} />
+                          </Fade>
+                      </li>
+                      <li className="item col-6 col-sm-6 col-md-4">
+                          <Fade  force={true} bottom delay={250} duration={700} step={this.step.is('txt_bottom')}>
+                          <img className="img-fluid" alt="Ahlem" src={require('./images/toyota-logo.svg')} />
+                            </Fade>
+                        </li>
+                </ul>
+
+
+              <div className="row">
+
+                <div className="col-12 my-5">
+                    <Fade force={true} bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
+                    <div className="entry intro_copy">
+                      <p>
+                        <span className="drop_cap">Meet the Team</span>
+                        </p>
+                      </div>
+                        </Fade>
+                    </div>
+
+              </div>
+
+
+        </section>
+        <section className="intro_section d-none">
+          <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-6 offset-md-5 col-lg-5 offset-lg-6">
-              <Fade bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
+              <Fade force={true} bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
               <div className="entry intro_copy">
                 <p>
             <span className="drop_cap">i</span>like to know how things work. Whether it's a website or a washing machine, I'll pick it apart until the purpose of each piece becomes clear, then put it back together again. I've spent seven years deconstructing the web, thousands of hours analyzing every POST and GET, from back-end to front-end and back again.
@@ -102,9 +182,9 @@ import Stepper from 'react-reveal/Stepper';
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row d-none">
           <div className="col-12 col-sm-6 col-md-6 col-lg-4 rotate_it">
-                <Fade left delay={300} duration={700}>
+                <Fade left delay={300} duration={700} fraction={0}>
             <div className="entry alt-title">
               <h3 className="text-animate">Skill Set</h3>
 

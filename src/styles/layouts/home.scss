@@ -1,8 +1,12 @@
 
 
 .home {
-  height: calc(100vh - 0px);
-  min-height: 500px;
+  height: calc(100vh - 135px);
+  @media (max-width: 668px) {
+    max-height: 540px;
+    min-height: 500px;
+  }
+  min-height: 650px;
   padding: 0 10px;
   position: relative;
   overflow: hidden;
@@ -16,15 +20,19 @@
   @include vertical-align();
   h1 {
     margin: 0;
-    font-size: 9vw;
-    line-height: 0.9;
+      font-size: 11vw;
+      @include bp(medium) {
+      font-size: 9vw;
+      }
+
+    line-height: 0.76;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
     small {
       display: block;
       text-align: right;
-      font-size:6.1vw;
+      font-size: 11.1vw;
       font-weight: 100;
     }
     .circle_fix {
@@ -43,16 +51,19 @@
       border-radius: 50%;
       width: 12vw;
       height: 12vw;
-      min-width: 120px;
-      min-height: 120px;
+      min-width: 80px;
+      min-height: 80px;
       max-width: 290px;
       max-height: 290px;
       i {
         @include vertical-align();
-        font-size: 3.5vw;
+          @include bp(medium) {
+        	font-size: 3.5vw;
+        	}
+        font-size: 22px;
         font-weight: 700;
         display: block;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         font-style: normal;
         color: #6f0f00;
 
@@ -68,7 +79,7 @@
     h2 {
       margin: 0;
       font-weight: bold;
-      font-size:5em;
+      font-size:9.5vw;
       line-height: 0.9;
       text-transform: uppercase;
     }
@@ -82,11 +93,11 @@
       @include rotate($degree: 90deg);
       display: inline-block;
       color: $red;
-      font-size: 26px;
-        position: relative;
-        top: -19px;
-        left: -15px;
-        font-weight: 400;
+      font-size: .32em;
+      position: relative;
+      top: -2.2vw;
+      left: -3%;
+      font-weight: 400;
     }
   }
 }
