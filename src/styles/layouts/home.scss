@@ -1,48 +1,49 @@
-
-
 .home {
   height: calc(100vh - 135px);
   @media (max-width: 668px) {
-    max-height: 540px;
+    max-height: 500px;
     min-height: 500px;
   }
   min-height: 650px;
   padding: 0 10px;
   position: relative;
   overflow: hidden;
+
   footer {
     display: none;
   }
 }
 
-
 .intro {
   @include vertical-align();
+
   h1 {
     margin: 0;
-      font-size: 11vw;
-      @include bp(medium) {
+    font-size: 11vw;
+    @include bp(medium) {
       font-size: 9vw;
-      }
-
+    }
     line-height: 0.76;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
+
     small {
       display: block;
       text-align: right;
       font-size: 11.1vw;
       font-weight: 100;
     }
+
     .circle_fix {
       display: inline-block;
       float: right;
       padding-bottom: 3px;
     }
+
     .circle_art {
       position: relative;
-      background:$red;
+      background: $red;
       display: inline-block;
       text-align: center;
       float: right;
@@ -55,18 +56,18 @@
       min-height: 80px;
       max-width: 290px;
       max-height: 290px;
+
       i {
         @include vertical-align();
-          @include bp(medium) {
-        	font-size: 3.5vw;
-        	}
+        @include bp(medium) {
+          font-size: 3.5vw;
+        }
         font-size: 22px;
         font-weight: 700;
         display: block;
         letter-spacing: -1px;
         font-style: normal;
         color: #6f0f00;
-
       }
     }
   }
@@ -75,25 +76,27 @@
 .cta_bottom {
   position: absolute;
   bottom: 20px;
+
   .entry-wrap {
     h2 {
       margin: 0;
       font-weight: bold;
-      font-size:9.5vw;
+      font-size: 9.5vw;
       line-height: 0.9;
       text-transform: uppercase;
     }
+
     small {
       font-weight: 100;
-      font-size: .5em;
+      font-size: 0.5em;
       display: block;
-
     }
+
     .rotate {
       @include rotate($degree: 90deg);
       display: inline-block;
       color: $red;
-      font-size: .32em;
+      font-size: 0.32em;
       position: relative;
       top: -2.2vw;
       left: -3%;

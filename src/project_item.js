@@ -46,7 +46,7 @@ class ProjectItem extends Component {
       if (this.state.requestFailed)
         return <p>Failed!</p>
       if (!this.state.post)
-        return <p>Loading...</p>
+        return <p className="loading_project">Loading...</p>
       const introCopy = this.state.post[0].content.rendered;
       const div = document.createElement("div");
       div.innerHTML = introCopy;

@@ -42,22 +42,11 @@ const Songs = withSoundCloudAudio(props => {
             <div className="entry">
               <div className="entry-title">
                 <ReactHover options={optionsCursorTrueWithMargin}>
-                    <ReactHover.Trigger type='trigger'>
-                          <div className="entry-title">
+                    <ReactHover.Trigger type='trigger'><div className="entry-title">
                             <h3 dangerouslySetInnerHTML={{
                               __html: song.name
                             }}/>
-                          <time>Release Date: <b>{song.released}</b></time>
-
-                            </div>
-                    </ReactHover.Trigger>
-                <ReactHover.Hover type='hover'>
-                <div className="hover">
-                <img className="thumbnail img-fluid" src={require(`./images/${song.image}`)}/>
-                </div>
-                  </ReactHover.Hover>
-                    </ReactHover>
-              <Player onPlayClick={() => {
+                          <time>Release Date: <b>{song.released}</b></time></div><Player onPlayClick={() => {
                 }} clientId="4530657cfd429e1c0396cf8a1a7ed39c" resolveUrl={song.resolveUrl} onReady={() =>
                   $('.song-item').click( function(){
                       if ( $(this).hasClass('active') ) {
@@ -68,7 +57,12 @@ const Songs = withSoundCloudAudio(props => {
                       }
                   })
                 }
-                />
+                /></ReactHover.Trigger><ReactHover.Hover type='hover'>
+                    <div className="hover">
+                    <img className="thumbnail img-fluid" src={require(`./images/${song.image}`)}/>
+                    </div>
+                  </ReactHover.Hover>
+              </ReactHover>
               </div>
             </div>
           </article>
@@ -152,11 +146,14 @@ class Music extends React.Component {
         <section className="intro_section">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-7 offset-md-5 col-lg-5 offset-lg-6">
+              <Fade force={true} bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
+
               <div className="entry intro_copy">
-                <p className="text-animate">
+                <p>
                   <span className="drop_cap">B</span>
                   eatnik Records was an idea that never found it's footing. The concept was to sign aspiring musicians passionate about creating and sharing their music to the world and promoting them through live performances and social networks. Although, the label never succeded, it did have a huge impact on my life: While putting the pieces together in the early stages of the label, I drafted a business model, and one thing that kept coming up was the need to have web presence. Since funds were low, I took it upon myself to learn and build a site. Since then, music and coding have been an equal passion of mine.</p>
               </div>
+            </Fade>
             </div>
           </div>
         </section>

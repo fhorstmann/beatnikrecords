@@ -50,12 +50,12 @@ class Projects extends Component {
         }
         let optionsCursorTrueWithMargin = {
           followCursor: true,
-          shiftX: 60,
-          shiftY: -300
+          shiftX: 200,
+          shiftY: -350
         };
 
         return (
-          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post-item" className={`col-12 col-md-6 offset-md-${index > 5
+          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post-item" className={`col-12 col-md-8 col-lg-6 offset-md-${index > 4
             ? `${index - 4}`
             : `${index + 0}`}`}>
               <Link className="entry" to={`/projects/${post.slug}`}>
@@ -77,7 +77,7 @@ class Projects extends Component {
                         </ReactHover.Trigger>
                         <ReactHover.Hover type='hover'>
                           <div className="hover">
-                            <img className="thumbnail img-fluid" alt="{post.title.rendered}" src={`https://frhdesigns.com/${post.better_featured_image.source_url}`} />
+                            <img className="thumbnail img-fluid" alt={post.title.rendered} src={`https://frhdesigns.com/${post.better_featured_image.source_url}`} />
                         </div>
                     </ReactHover.Hover>
                   </ReactHover>
