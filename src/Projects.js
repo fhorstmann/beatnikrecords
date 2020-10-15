@@ -149,7 +149,7 @@ class Projects extends Component {
                   <Fade bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
                     <div className="entry intro_copy">
                       <p>
-                        <span className="drop_cap">B</span>elow is a sample of projects I've designed and built over the years. Some were built at the request of friends, while others were just for the heck of it: learning new code and putting it to practice is the same to me as a carpenter getting a new piece of machinery and creating something awesome out of it.</p>
+                        <span className="drop_cap">B</span>elow is a sample of projects we've designed and built over the years. Some were built at the request of friends, while others were just for the heck of it: learning new code and putting it to practice is the same to us as a carpenter getting a new piece of machinery and creating something awesome out of it.</p>
                     </div>
                   </Fade>
                 </div>
