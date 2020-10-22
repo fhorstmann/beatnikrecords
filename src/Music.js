@@ -41,12 +41,11 @@ const Songs = withSoundCloudAudio(props => {
           <article key={i} id="post" className={`song-item col-12`}>
             <div className="entry">
               <div className="entry-title">
-                <ReactHover options={optionsCursorTrueWithMargin}>
-                    <ReactHover.Trigger type='trigger'><div className="entry-title">
+                  <div className="entry-title">
                             <h3 dangerouslySetInnerHTML={{
                               __html: song.name
                             }}/>
-                          <time>Release Date: <b>{song.released}</b></time></div><Player onPlayClick={() => {
+                          <time><b>Release Date: </b>{song.released}</time></div><Player onPlayClick={() => {
                 }} clientId="4530657cfd429e1c0396cf8a1a7ed39c" resolveUrl={song.resolveUrl} onReady={() =>
                   $('.song-item').click( function(){
                       if ( $(this).hasClass('active') ) {
@@ -57,13 +56,8 @@ const Songs = withSoundCloudAudio(props => {
                       }
                   })
                 }
-                /></ReactHover.Trigger><ReactHover.Hover type='hover'>
-                    <div className="hover">
-                    <img className="thumbnail img-fluid" src={require(`./images/${song.image}`)}/>
-                    </div>
-                  </ReactHover.Hover>
-              </ReactHover>
-              </div>
+                />
+                </div>
             </div>
           </article>
         ))}
