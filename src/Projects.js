@@ -55,10 +55,8 @@ class Projects extends Component {
         };
 
         return (
-          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post-item" className={`col-12 col-md-8 col-lg-6 offset-md-${index > 4
-            ? `${index - 4}`
-            : `${index + 0}`}`}>
-              <Link className="entry" to={`/projects/${post.slug}`}>
+          <Fade duration={700} onReveal={() => revealFunc('element revealed')} key={post.id} id="post-item" className="col-12">
+              <a className="entry" href={`${post.meta_box._project_url}`} target="_blank">
               <ReactHover options={optionsCursorTrueWithMargin}>
                   <ReactHover.Trigger type='trigger'>
                 <div className="entry-title">
@@ -81,7 +79,7 @@ class Projects extends Component {
                         </div>
                     </ReactHover.Hover>
                   </ReactHover>
-              </Link>
+              </a>
           </Fade>
         );})
       return (

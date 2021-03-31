@@ -13,7 +13,6 @@ class About_me extends Component {
     this.step = new Stepper().step('title', 500).step('b_bottom', 100).step('txt_bottom', 300);
 
   }
-
   render() {
     return (<div className="page about_me">
       <section className="section-content">
@@ -151,16 +150,15 @@ class About_me extends Component {
                   <h4>Freddie H.</h4>
                   <p>
 
-                    Freddie like's to know how things work. Whether it's a website or a washing machine, I'll pick it apart until the purpose of each piece becomes clear, then put it back together again. I've spent seven years deconstructing the web, thousands of hours analyzing every POST and GET, from back-end to front-end and back again.
+                    Freddie like's to know how things work. Whether it's a website or a washing machine, he'll pick it apart until the purpose of each piece becomes clear, then put it back together again. He spent seven years deconstructing the web, thousands of hours analyzing every POST and GET, from back-end to front-end and back again.
                   </p>
                   <p>
-                    I began my career in 2010 making a personal website for my music. Then a friend asked for one. Then another. After word spread, I met Jonathan who asked me to join Eat,Sleep,Work,.Inc as an associate front-end developer. 7 years later and here I am, lead full-stack developer and still as passionate about a good website as the day I started.</p>
-                  <p>
-                    I've shared my passion with my family and my community, teaching website building courses through Compton YouthBuild to students who'd otherwise have no access to the tools and resources of cutting edge development.</p>
+                    Freddie began his coding career in 2010 making a personal website for his music. Then a friend asked for one. Then another. After word spread, he met Jonathan who asked him to join Eat,Sleep,Work,.Inc as an associate front-end developer. 7 years later, he became the lead full-stack developer at ESW.</p>
+
                 </div>
               </div>
             </div>
-            <div className="row p-md-5">
+            <div className="row px-md-5">
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 rotate_it">
                 <div className="entry alt-title">
                   <h3 className="text-animate">Stack</h3>
@@ -179,10 +177,8 @@ class About_me extends Component {
 
               </div>
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 rotate_it">
-
                 <div className="entry alt-title">
                   <h3 className="text-animate">Build Tools</h3>
-
                   <ul>
                     <li className="text-animate">− LAMP Stack</li>
                     <li className="text-animate">− Bootstrap 3.0/4</li>
@@ -209,7 +205,6 @@ class About_me extends Component {
                     <li className="text-animate">− JQuery Mobile</li>
                     <li className="text-animate">− Shopify</li>
                   </ul>
-
                 </div>
 
               </div>
@@ -218,14 +213,14 @@ class About_me extends Component {
               <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div className="entry p-md-5">
                   <figure>
-                    <img className="img-fluid" alt="Freddie & Luna coding" src={require('./images/alex.jpg')}/>
+                    <img className="img-fluid" alt="Alex and Hunter" src={require('./images/alex.jpg')}/>
                   </figure>
                 </div>
               </div>
 
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <div className="entry p-md-5">
-                    <h4>Alex P.</h4>
+                  <h4>Alex P.</h4>
                   <p>
                     Alex Potash has over 15 years experience in software development, ranging from desktop to mobile, device firmware, E-commerce, big data analytics and machine learning. After double-majoring in English and Physics from Whittier College, Alex began his career as an Analytics Engineer at Palantir, a Peter Thiel funded "big data" company in Palo Alto. After two years in Silicon Valley, Alex moved to wine country in the heart of Napa Valley to oversee IT/operations at the largest direct-selling winery in the world, WineShop At Home. When the thrill of creating a custom inventory system with UPS/FedEx shipping integrations had faded, Alex sought further excitement at a smart irrigation system startup in Los Angeles called Cyber-Rain. Alex wrote firmware and worked closely with the mechanical/electrical engineers to create custom devices tailored to their patented Zigbee communication systems.</p>
                   <p>
@@ -233,59 +228,49 @@ class About_me extends Component {
                 </div>
               </div>
             </div>
-            <div className="row p-md-5">
+            <div className="row px-md-5">
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 rotate_it">
 
                 <div className="entry alt-title">
                   <h3 className="text-animate">Stack</h3>
                   <ul>
-                    <li className="text-animate">− PHP</li>
-                    <li className="text-animate">− Javascript/ES6</li>
-                    <li className="text-animate">− jQuery/AJAX</li>
-                    <li className="text-animate">− SQL/MySQL</li>
-                    <li className="text-animate">− RESTful API
+                    <li className="text-animate">− Python</li>
+                    <li className="text-animate">− Java</li>
+                    <li className="text-animate">− Kotlin</li>
+                    <li className="text-animate">− SQL / NoSQL</li>
+                    <li className="text-animate">− Javascript
                     </li>
-                    <li className="text-animate">− HTML5 &amp; CSS3/SCSS
+                    <li className="text-animate">− Rust
                     </li>
-                    <li className="text-animate">− UI/UX Design</li>
+
                   </ul>
                 </div>
 
               </div>
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 rotate_it">
-
                 <div className="entry alt-title">
                   <h3 className="text-animate">Build Tools</h3>
-
                   <ul>
-                    <li className="text-animate">− LAMP Stack</li>
-                    <li className="text-animate">− Bootstrap 3.0/4</li>
-                    <li className="text-animate">− Grunt/Gulp/Bower</li>
+                    <li className="text-animate">− Cargo</li>
+                    <li className="text-animate">− pip</li>
                     <li className="text-animate">− Node/NPM</li>
-                    <li className="text-animate">− AWS: EC2, RDS, S3</li>
                     <li className="text-animate">− Git</li>
+                    <li className="text-animate">− Pacman :)</li>
                   </ul>
-
                 </div>
-
               </div>
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 rotate_it">
-
                 <div className="entry alt-title">
                   <h3 className="text-animate">Frameworks</h3>
-
                   <ul>
-                    <li className="text-animate">− Wordpress</li>
-                    <li className="text-animate">− Angular</li>
-                    <li className="text-animate">− React</li>
-                    <li className="text-animate">− Ionic</li>
-                    <li className="text-animate">− Magento/Woocommerce</li>
-                    <li className="text-animate">− JQuery Mobile</li>
-                    <li className="text-animate">− Shopify</li>
+                    <li className="text-animate">− Django</li>
+                    <li className="text-animate">− Flask</li>
+                    <li className="text-animate">− Node</li>
+                    <li className="text-animate">− Android SDK</li>
+                    <li className="text-animate">− OpenGL ES</li>
+                    <li className="text-animate">− Rocket</li>
                   </ul>
-
                 </div>
-
               </div>
             </div>
           </section>

@@ -32,7 +32,11 @@ const App = ({location}) => {
         <div className="row">
           <div className="col-12 col-sm-12 col-md-9 col-lg-10">
             <TransitionGroup>
-              <CSSTransition key={location.key} timeout={{appear: 300,enter: 300,exit: 300}} classNames="fade" mountOnEnter={true} unmountOnExit={true}>
+              <CSSTransition key={location.key} timeout={{ enter: 700, exit: 700 }}
+                onExit={node => {
+                  node.style.position = "fixed";
+                  node.style.top = -1 * window.scrollY + "px";
+                }} classNames="fade" mountOnEnter={true} unmountOnExit={true}>
                 <Switch>
                   <Route exact path="/" component={Home}/>
                   <Route exact path="/projects" component={Projects}/>
@@ -42,7 +46,6 @@ const App = ({location}) => {
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
-
           </div>
           <div className="col-12 col-sm-12 col-md-3 col-lg-2 info_col">
             <aside className="fixed_info">
@@ -53,7 +56,7 @@ const App = ({location}) => {
                 <div className="meta_info">{Moment(CurrentDate).format('HH:mm:ss')}</div>
                 <div className="meta_info last">
                   <b>E:</b>
-                  <a href="mailto:freddie.horstmann@gmail.com?Subject=Hello" target="_top">Contact Me</a>
+                  <a href="mailto:freddie@greaterthannice.com?Subject=Hello" target="_top"> Contact Me</a>
                 </div>
               </div>
             </aside>

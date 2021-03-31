@@ -275,7 +275,7 @@ h1, h2, h3, h4, {
       position: absolute;
       height: 1px;
       width: 100%;
-      bottom: 0;
+      bottom: 4px;
       left: 1px;
       background-color: $drk;
       z-index: 1;
@@ -379,6 +379,13 @@ h1, h2, h3, h4, {
 
 .nav {
   display: none;
+}
+
+}
+@media (max-width: 667px) {
+small, .small {
+    font-size: 67%;
+    font-weight: 400;
 }
 
 }
