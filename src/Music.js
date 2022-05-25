@@ -9,7 +9,7 @@ import Stepper from 'react-reveal/Stepper';
 import ReactHover from 'react-hover'
 import './component.css'
 import $ from "jquery";
-//const clientId = '4530657cfd429e1c0396cf8a1a7ed39c';
+const clientId = 'lIuwRyn9yrumyjCF4dDEbe3PczemKKqj';
 //const resolveUrl = 'https://soundcloud.com/freddiehorstmann/where-i-want-to-be';
 //const give_it_to_me_baby = 'https://soundcloud.com/freddiehorstmann/give-it-to-me-baby';
 
@@ -46,7 +46,7 @@ const Songs = withSoundCloudAudio(props => {
                               __html: song.name
                             }}/>
                           <time><b>Release Date: </b>{song.released}</time></div><Player onPlayClick={() => {
-                }} clientId="4530657cfd429e1c0396cf8a1a7ed39c" resolveUrl={song.resolveUrl} onReady={() =>
+                }} clientId="lIuwRyn9yrumyjCF4dDEbe3PczemKKqj" resolveUrl={song.resolveUrl} onReady={() =>
                   $('.song-item').click( function(){
                       if ( $(this).hasClass('active') ) {
                           $(this).removeClass('active');

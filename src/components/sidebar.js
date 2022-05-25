@@ -40,11 +40,14 @@ class ParentComponent extends React.Component {
       <NavLink className="bm-item menu-item" to="/about-us">
         <span onClick={() => this.closeMenu()}>About Us</span>
       </NavLink>
-      <NavLink className="bm-item menu-item" to="/beatnik-records">
-        <span onClick={() => this.closeMenu()}>Beatnik Records</span>
+      <NavLink className="bm-item menu-item" to="/contact-us">
+        <span onClick={() => this.closeMenu()}>Contact</span>
       </NavLink>
 
     </Menu>);
   }
+
+
+
 }
 export default ParentComponent;

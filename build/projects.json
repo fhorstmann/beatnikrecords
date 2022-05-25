@@ -1,0 +1,570 @@
+[{
+  "id": 1708,
+  "date": "2022-05-23T15:46:27",
+  "date_gmt": "2022-05-23T15:46:27",
+  "guid": {
+    "rendered": "https:\/\/frhdesigns.com\/?post_type=greater_than_nice&#038;p=1708"
+  },
+  "modified": "2022-05-23T15:46:27",
+  "modified_gmt": "2022-05-23T15:46:27",
+  "slug": "thats-los-angeles",
+  "status": "publish",
+  "type": "greater_than_nice",
+  "link": "https:\/\/frhdesigns.com\/greater_than_nice\/thats-los-angeles\/",
+  "title": {
+    "rendered": "That&#8217;s Los Angeles"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "featured_media": 94,
+  "template": "",
+  "better_featured_image": {
+    "id": 94,
+    "alt_text": "",
+    "caption": "",
+    "description": "",
+    "media_type": "image",
+    "media_details": {
+      "width": 900,
+      "height": 718,
+      "file": "2017\/05\/thats-la-featured.jpg",
+      "sizes": {
+        "thumbnail": {
+          "file": "thats-la-featured-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "mime-type": "image\/jpeg",
+          "source_url": "https:\/\/frhdesigns.com\/wp-content\/uploads\/2017\/05\/thats-la-featured-150x150.jpg"
+        },
+        "medium": {
+          "file": "thats-la-featured-300x239.jpg",
+          "width": 300,
+          "height": 239,
+          "mime-type": "image\/jpeg",
+          "source_url": "https:\/\/frhdesigns.com\/wp-content\/uploads\/2017\/05\/thats-la-featured-300x239.jpg"
+        },
+        "medium_large": {
+          "file": "thats-la-featured-768x613.jpg",
+          "width": 768,
+          "height": 613,
+          "mime-type": "image\/jpeg",
+          "source_url": "https:\/\/frhdesigns.com\/wp-content\/uploads\/2017\/05\/thats-la-featured-768x613.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": []
+      }
+    },
+    "post": 93,
+    "source_url": "https:\/\/frhdesigns.com\/wp-content\/uploads\/2017\/05\/thats-la-featured.jpg"
+  },
+  "acf": [],
+  "meta_box": [],
+  "_links": {
+    "self": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects\/1708"
+    }],
+    "collection": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects"
+    }],
+    "about": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/types\/greater_than_nice"
+    }],
+    "wp:featuredmedia": [{
+      "embeddable": true,
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media\/94"
+    }],
+    "wp:attachment": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media?parent=1708"
+    }],
+    "curies": [{
+      "name": "wp",
+      "href": "https:\/\/api.w.org\/{rel}",
+      "templated": true
+    }]
+  }
+}, {
+  "id": 1706,
+  "date": "2022-05-23T15:33:22",
+  "date_gmt": "2022-05-23T15:33:22",
+  "guid": {
+    "rendered": "https:\/\/frhdesigns.com\/?post_type=greater_than_nice&#038;p=1706"
+  },
+  "modified": "2022-05-23T15:33:22",
+  "modified_gmt": "2022-05-23T15:33:22",
+  "slug": "toyota-parts-service",
+  "status": "publish",
+  "type": "greater_than_nice",
+  "link": "https:\/\/frhdesigns.com\/greater_than_nice\/toyota-parts-service\/",
+  "title": {
+    "rendered": "Toyota Parts &#038; Service"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "featured_media": 1707,
+  "template": "",
+  "better_featured_image": {
+    "id": 1707,
+    "alt_text": "",
+    "caption": "",
+    "description": "",
+    "media_type": "image",
+    "media_details": {
+      "width": 900,
+      "height": 718,
+      "file": "2022\/05\/toyota-wholesale.jpg",
+      "sizes": {
+        "medium": {
+          "file": "toyota-wholesale-300x239.jpg",
+          "width": 300,
+          "height": 239,
+          "mime-type": "image\/jpeg",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/23153312\/toyota-wholesale-300x239.jpg"
+        },
+        "thumbnail": {
+          "file": "toyota-wholesale-150x150.jpg",
+          "width": 150,
+          "height": 150,
+          "mime-type": "image\/jpeg",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/23153312\/toyota-wholesale-150x150.jpg"
+        },
+        "medium_large": {
+          "file": "toyota-wholesale-768x613.jpg",
+          "width": 768,
+          "height": 613,
+          "mime-type": "image\/jpeg",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/23153312\/toyota-wholesale-768x613.jpg"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0"
+      }
+    },
+    "post": 1706,
+    "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/23153312\/toyota-wholesale.jpg"
+  },
+  "acf": [],
+  "meta_box": [],
+  "_links": {
+    "self": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects\/1706"
+    }],
+    "collection": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects"
+    }],
+    "about": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/types\/greater_than_nice"
+    }],
+    "wp:featuredmedia": [{
+      "embeddable": true,
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media\/1707"
+    }],
+    "wp:attachment": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media?parent=1706"
+    }],
+    "curies": [{
+      "name": "wp",
+      "href": "https:\/\/api.w.org\/{rel}",
+      "templated": true
+    }]
+  }
+}, {
+  "id": 1704,
+  "date": "2022-05-20T18:11:48",
+  "date_gmt": "2022-05-20T18:11:48",
+  "guid": {
+    "rendered": "https:\/\/frhdesigns.com\/?post_type=greater_than_nice&#038;p=1704"
+  },
+  "modified": "2022-05-23T15:34:17",
+  "modified_gmt": "2022-05-23T15:34:17",
+  "slug": "industry-of-all-nations",
+  "status": "publish",
+  "type": "greater_than_nice",
+  "link": "https:\/\/frhdesigns.com\/greater_than_nice\/industry-of-all-nations\/",
+  "title": {
+    "rendered": "Industry Of All Nations"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "featured_media": 1705,
+  "template": "",
+  "better_featured_image": {
+    "id": 1705,
+    "alt_text": "",
+    "caption": "",
+    "description": "",
+    "media_type": "image",
+    "media_details": {
+      "width": 900,
+      "height": 570,
+      "file": "2022\/05\/Screen-Shot-2022-05-20-at-11.04.34-AM-e1653320038676.png",
+      "sizes": {
+        "medium": {
+          "file": "Screen-Shot-2022-05-20-at-11.04.34-AM-300x190.png",
+          "width": 300,
+          "height": 190,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-300x190.png"
+        },
+        "large": {
+          "file": "Screen-Shot-2022-05-20-at-11.04.34-AM-1024x649.png",
+          "width": 1024,
+          "height": 649,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-1024x649.png"
+        },
+        "thumbnail": {
+          "file": "Screen-Shot-2022-05-20-at-11.04.34-AM-150x150.png",
+          "width": 150,
+          "height": 150,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-150x150.png"
+        },
+        "medium_large": {
+          "file": "Screen-Shot-2022-05-20-at-11.04.34-AM-768x487.png",
+          "width": 768,
+          "height": 487,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-768x487.png"
+        },
+        "1536x1536": {
+          "file": "Screen-Shot-2022-05-20-at-11.04.34-AM-1536x973.png",
+          "width": 1536,
+          "height": 973,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-1536x973.png"
+        },
+        "2048x2048": {
+          "file": "Screen-Shot-2022-05-20-at-11.04.34-AM-2048x1298.png",
+          "width": 2048,
+          "height": 1298,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-2048x1298.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0"
+      }
+    },
+    "post": 1704,
+    "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20180600\/Screen-Shot-2022-05-20-at-11.04.34-AM-e1653320038676.png"
+  },
+  "acf": [],
+  "meta_box": [],
+  "_links": {
+    "self": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects\/1704"
+    }],
+    "collection": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects"
+    }],
+    "about": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/types\/greater_than_nice"
+    }],
+    "wp:featuredmedia": [{
+      "embeddable": true,
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media\/1705"
+    }],
+    "wp:attachment": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media?parent=1704"
+    }],
+    "curies": [{
+      "name": "wp",
+      "href": "https:\/\/api.w.org\/{rel}",
+      "templated": true
+    }]
+  }
+}, {
+  "id": 1702,
+  "date": "2022-05-20T17:54:09",
+  "date_gmt": "2022-05-20T17:54:09",
+  "guid": {
+    "rendered": "https:\/\/frhdesigns.com\/?post_type=greater_than_nice&#038;p=1702"
+  },
+  "modified": "2022-05-23T15:35:16",
+  "modified_gmt": "2022-05-23T15:35:16",
+  "slug": "asher-fabric-concepts",
+  "status": "publish",
+  "type": "greater_than_nice",
+  "link": "https:\/\/frhdesigns.com\/greater_than_nice\/asher-fabric-concepts\/",
+  "title": {
+    "rendered": "Asher Fabric Concepts"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "featured_media": 1703,
+  "template": "",
+  "better_featured_image": {
+    "id": 1703,
+    "alt_text": "",
+    "caption": "",
+    "description": "",
+    "media_type": "image",
+    "media_details": {
+      "width": 900,
+      "height": 570,
+      "file": "2022\/05\/Screen-Shot-2022-05-20-at-10.52.46-AM-e1653320099232.png",
+      "sizes": {
+        "medium": {
+          "file": "Screen-Shot-2022-05-20-at-10.52.46-AM-300x190.png",
+          "width": 300,
+          "height": 190,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-300x190.png"
+        },
+        "large": {
+          "file": "Screen-Shot-2022-05-20-at-10.52.46-AM-1024x649.png",
+          "width": 1024,
+          "height": 649,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-1024x649.png"
+        },
+        "thumbnail": {
+          "file": "Screen-Shot-2022-05-20-at-10.52.46-AM-150x150.png",
+          "width": 150,
+          "height": 150,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-150x150.png"
+        },
+        "medium_large": {
+          "file": "Screen-Shot-2022-05-20-at-10.52.46-AM-768x486.png",
+          "width": 768,
+          "height": 486,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-768x486.png"
+        },
+        "1536x1536": {
+          "file": "Screen-Shot-2022-05-20-at-10.52.46-AM-1536x973.png",
+          "width": 1536,
+          "height": 973,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-1536x973.png"
+        },
+        "2048x2048": {
+          "file": "Screen-Shot-2022-05-20-at-10.52.46-AM-2048x1297.png",
+          "width": 2048,
+          "height": 1297,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-2048x1297.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0"
+      }
+    },
+    "post": 1702,
+    "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20175337\/Screen-Shot-2022-05-20-at-10.52.46-AM-e1653320099232.png"
+  },
+  "acf": [],
+  "meta_box": [],
+  "_links": {
+    "self": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects\/1702"
+    }],
+    "collection": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects"
+    }],
+    "about": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/types\/greater_than_nice"
+    }],
+    "wp:featuredmedia": [{
+      "embeddable": true,
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media\/1703"
+    }],
+    "wp:attachment": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media?parent=1702"
+    }],
+    "curies": [{
+      "name": "wp",
+      "href": "https:\/\/api.w.org\/{rel}",
+      "templated": true
+    }]
+  }
+}, {
+  "id": 1699,
+  "date": "2022-05-20T17:32:43",
+  "date_gmt": "2022-05-20T17:32:43",
+  "guid": {
+    "rendered": "https:\/\/frhdesigns.com\/?post_type=greater_than_nice&#038;p=1699"
+  },
+  "modified": "2022-05-20T17:50:47",
+  "modified_gmt": "2022-05-20T17:50:47",
+  "slug": "los-angeles-apparel",
+  "status": "publish",
+  "type": "greater_than_nice",
+  "link": "https:\/\/frhdesigns.com\/greater_than_nice\/los-angeles-apparel\/",
+  "title": {
+    "rendered": "Los Angeles Apparel"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>Custom theme, Shopify 2.0<\/p>\n",
+    "protected": false
+  },
+  "featured_media": 1701,
+  "template": "",
+  "better_featured_image": {
+    "id": 1701,
+    "alt_text": "",
+    "caption": "",
+    "description": "",
+    "media_type": "image",
+    "media_details": {
+      "width": 4000,
+      "height": 2002,
+      "file": "2022\/05\/Screen-Shot-2022-05-20-at-10.31.54-AM.png",
+      "sizes": {
+        "medium": {
+          "file": "Screen-Shot-2022-05-20-at-10.31.54-AM-300x150.png",
+          "width": 300,
+          "height": 150,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM-300x150.png"
+        },
+        "large": {
+          "file": "Screen-Shot-2022-05-20-at-10.31.54-AM-1024x513.png",
+          "width": 1024,
+          "height": 513,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM-1024x513.png"
+        },
+        "thumbnail": {
+          "file": "Screen-Shot-2022-05-20-at-10.31.54-AM-150x150.png",
+          "width": 150,
+          "height": 150,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM-150x150.png"
+        },
+        "medium_large": {
+          "file": "Screen-Shot-2022-05-20-at-10.31.54-AM-768x384.png",
+          "width": 768,
+          "height": 384,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM-768x384.png"
+        },
+        "1536x1536": {
+          "file": "Screen-Shot-2022-05-20-at-10.31.54-AM-1536x769.png",
+          "width": 1536,
+          "height": 769,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM-1536x769.png"
+        },
+        "2048x2048": {
+          "file": "Screen-Shot-2022-05-20-at-10.31.54-AM-2048x1025.png",
+          "width": 2048,
+          "height": 1025,
+          "mime-type": "image\/png",
+          "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM-2048x1025.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0"
+      }
+    },
+    "post": 1699,
+    "source_url": "https:\/\/losangeles-apparel.s3.us-west-1.amazonaws.com\/wp-content\/uploads\/2022\/05\/20173213\/Screen-Shot-2022-05-20-at-10.31.54-AM.png"
+  },
+  "acf": [],
+  "meta_box": [],
+  "_links": {
+    "self": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects\/1699"
+    }],
+    "collection": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/new_projects"
+    }],
+    "about": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/types\/greater_than_nice"
+    }],
+    "wp:featuredmedia": [{
+      "embeddable": true,
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media\/1701"
+    }],
+    "wp:attachment": [{
+      "href": "https:\/\/frhdesigns.com\/wp-json\/wp\/v2\/media?parent=1699"
+    }],
+    "curies": [{
+      "name": "wp",
+      "href": "https:\/\/api.w.org\/{rel}",
+      "templated": true
+    }]
+  }
+}]

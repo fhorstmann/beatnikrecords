@@ -13,7 +13,7 @@ export default class TopBar extends Component {
 																			<ul className="nav">
 																			 <li className="link-anim nav-item"><NavLink to="/projects"><span>Projects</span></NavLink></li>
 																			 <li className="link-anim nav-item"><NavLink to="/about-us"><span>About Us</span></NavLink></li>
-																			 <li className="link-anim nav-item"><NavLink to="/beatnik-records"><span>Beatnik Records</span></NavLink></li>
+																			 <li className="link-anim nav-item"><NavLink to="/contact-us"><span>Contact</span></NavLink></li>
 																		 </ul>
 																	 </nav>
 																	</div>
@@ -22,9 +22,9 @@ export default class TopBar extends Component {
 												<div style={{height: "50px",  width: "100%", position: "fixed", top: 0, zIndex: 9, textAlign: "left", }}>
 													<div id="mainNav" className="top-bar">
 										 					<nav>
-										 						<NavLink exact to="/" className="brand">Beatnik Records</NavLink>
+										 						<NavLink exact to="/" className="brand">GTN</NavLink>
 										 					</nav>
-										 			
+
 													</div>
 												</div>
 					 </DynamicHeader>

@@ -23,7 +23,7 @@ class About_me extends Component {
                 <Fade bottom="bottom" cascade={50} delay={300} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'inline-block'
                   }}>
-                  Ab
+                  əˈ
                 </Fade>
                 <Fade bottom="bottom" delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'inline-block'
@@ -33,13 +33,9 @@ class About_me extends Component {
                 <Fade bottom="bottom" cascade={50} delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'block'
                   }}>
-                  out
+                  bout
                 </Fade>
-                <Fade bottom="bottom" cascade={50} delay={450} duration={500} force={true} step={this.step.is('title')} style={{
-                    display: 'block'
-                  }}>
-                  Us
-                </Fade>
+
               </h1>
               <div>
                 <Fade fraction={0} force={true} bottom="bottom" delay={600} duration={500} step={this.step.is('b_bottom')} style={{
@@ -197,19 +193,19 @@ class About_me extends Component {
                   <h3 className="text-animate">Frameworks</h3>
 
                   <ul>
+                    <li className="text-animate">− Shopify</li>
                     <li className="text-animate">− Wordpress</li>
                     <li className="text-animate">− Angular</li>
-                    <li className="text-animate">− React</li>
+                    <li className="text-animate">− Next.js</li>
                     <li className="text-animate">− Ionic</li>
                     <li className="text-animate">− Magento/Woocommerce</li>
                     <li className="text-animate">− JQuery Mobile</li>
-                    <li className="text-animate">− Shopify</li>
                   </ul>
                 </div>
 
               </div>
             </div>
-            <div className="row my-5">
+            <div className="row mt-5">
               <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div className="entry p-md-5">
                   <figure>
@@ -223,7 +219,7 @@ class About_me extends Component {
                   <h4>Alex P.</h4>
                   <p>
                     Alex Potash has over 15 years experience in software development, ranging from desktop to mobile, device firmware, E-commerce, big data analytics and machine learning. After double-majoring in English and Physics from Whittier College, Alex began his career as an Analytics Engineer at Palantir, a Peter Thiel funded "big data" company in Palo Alto. After two years in Silicon Valley, Alex moved to wine country in the heart of Napa Valley to oversee IT/operations at the largest direct-selling winery in the world, WineShop At Home. When the thrill of creating a custom inventory system with UPS/FedEx shipping integrations had faded, Alex sought further excitement at a smart irrigation system startup in Los Angeles called Cyber-Rain. Alex wrote firmware and worked closely with the mechanical/electrical engineers to create custom devices tailored to their patented Zigbee communication systems.</p>
-                  <p>
+                  <p className="d-none">
                     Since then, Alex has been consulting and developing for clients ranging from a non-emergency medical transport app to a social media monetization site. He loves the pain leading to pleasure of working with new technologies and creating solutions for systems he's never worked with before. His current passion project is learning how to use a Kinesis Advantage2 after years of standard mechanical keyboards.</p>
                 </div>
               </div>

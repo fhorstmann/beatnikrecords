@@ -33,15 +33,15 @@ class Home extends Component {
                     hideWhenDoneDelay: 100,
                   }}>
                     <span>Hello</span>
-                    <Typist.Backspace count={8} delay={400}/>
+                    <Typist.Backspace count={8} delay={600}/>
                     <span>Ciao</span>
-                    <Typist.Backspace count={8} delay={400}/>
+                    <Typist.Backspace count={8} delay={600}/>
                     <span>Hola</span>
-                    <Typist.Backspace count={8} delay={400}/>
+                    <Typist.Backspace count={8} delay={600}/>
                     <span>Hallo</span>
-                    <Typist.Backspace count={8} delay={400}/>
+                    <Typist.Backspace count={8} delay={600}/>
                     <span>Jello</span>
-                    <Typist.Backspace count={8} delay={400} hideWhenDone={true}/>
+                    <Typist.Backspace count={8} delay={600} hideWhenDone={true}/>
                     <span>⌐■-■</span>
                   </Typist>
                 </i>

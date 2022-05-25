@@ -9,6 +9,7 @@ import Stepper from 'react-reveal/Stepper';
 import ReactHover from 'react-hover'
 import './component.css'
 //import ScrollAnimation from 'react-animate-on-scroll';
+//https://frhdesigns.com/wp-json/wp/v2/new_projects
 function revealFunc() {}
 class Projects extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Projects extends Component {
   }
   componentDidMount()
   {
-    fetch('https://frhdesigns.com/wp-json/wp/v2/project-api').then((response) => {
+    fetch("./projects.json").then((response) => {
       if (response.ok) {
         return response.json();
       } else {
@@ -63,19 +64,16 @@ class Projects extends Component {
                   <h3 dangerouslySetInnerHTML={{
               __html: post.title.rendered
               }}/>
-              <span dangerouslySetInnerHTML={{
-                          __html: post.excerpt.rendered
-                        }}/>
                 </div>
                   <div className="count">
                         <span>№ {index + 1}.</span>
                       <img className="img-fluid d-none" alt={post.title.rendered}
-                          src={`https://frhdesigns.com/${post.better_featured_image.source_url}`}/>
+                          src={`${post.better_featured_image.source_url}`}/>
                           </div>
                         </ReactHover.Trigger>
                         <ReactHover.Hover type='hover'>
                           <div className="hover">
-                            <img className="thumbnail img-fluid" alt={post.title.rendered} src={`https://frhdesigns.com/${post.better_featured_image.source_url}`} />
+                            <img className="thumbnail img-fluid" alt={post.title.rendered} src={`${post.better_featured_image.source_url}`} />
                         </div>
                     </ReactHover.Hover>
                   </ReactHover>
@@ -91,7 +89,7 @@ class Projects extends Component {
                   <Fade bottom cascade={50} delay={300} force={true} duration={500} step={this.step.is('title')} style={{
                     display: 'inline-block'
                   }}>
-                    pr
+                    prä
                   </Fade>
                   <Fade bottom delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'inline-block'
@@ -101,13 +99,9 @@ class Projects extends Component {
                   <Fade bottom cascade={50} delay={400} duration={500} force={true} step={this.step.is('title')} style={{
                     display: 'block'
                   }}>
-                    oj
+                    jekts
                   </Fade>
-                  <Fade bottom cascade={50} delay={450} duration={500} force={true} step={this.step.is('title')} style={{
-                    display: 'block'
-                  }}>
-                    ects
-                  </Fade>
+
                 </h1>
                 <div>
                   <Fade fraction={0} force={true} bottom delay={600} duration={500} step={this.step.is('b_bottom')} style={{
@@ -147,7 +141,7 @@ class Projects extends Component {
                   <Fade bottom delay={300} duration={700} step={this.step.is('txt_bottom')}>
                     <div className="entry intro_copy">
                       <p>
-                        <span className="drop_cap">B</span>elow is a sample of projects we've designed and built over the years. Some were built at the request of friends, while others were just for the heck of it: learning new code and putting it to practice is the same to us as a carpenter getting a new piece of machinery and creating something awesome out of it.</p>
+                        <span className="drop_cap">B</span>elow is a sample of projects we've had the pleasure to develop. While some were built at the request of friends, others were just for the heck of it: learning new code and putting it to practice is the same to us as a carpenter getting a new piece of machinery and creating something awesome out of it.</p>
                     </div>
                   </Fade>
                 </div>

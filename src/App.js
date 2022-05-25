@@ -10,10 +10,12 @@ import Home from './Home';
 import Projects from './Projects';
 import ProjectItem from "./project_item";
 import Aboutme from './Aboutme';
+import Contactus from './Contactus';
 import Music from './Music';
 import Moment from 'moment';
 import Footer from "./Footer";
 import SideBar from "./components/sidebar";
+import ScrollToTop from './ScrollToTop';
 //import Waypoint from 'react-waypoint';
 //import $ from "jquery";
 //const location  = this.props;
@@ -24,7 +26,7 @@ const App = ({location}) => {
   Moment.locale('en');
   var CurrentDate = Moment();
   return (<div className="App" id={currentKey}>
-
+   <ScrollToTop />
     <SideBar pageWrapId={"page-wrap"}/>
     <div id="page-wrap">
       <TopBar/>
@@ -33,15 +35,13 @@ const App = ({location}) => {
           <div className="col-12 col-sm-12 col-md-9 col-lg-10">
             <TransitionGroup>
               <CSSTransition key={location.key} timeout={{ enter: 700, exit: 700 }}
-                onExit={node => {
-                  node.style.position = "fixed";
-                  node.style.top = -1 * window.scrollY + "px";
-                }} classNames="fade" mountOnEnter={true} unmountOnExit={true}>
+               classNames="fade" mountOnEnter={true} unmountOnExit={true}>
                 <Switch>
                   <Route exact path="/" component={Home}/>
                   <Route exact path="/projects" component={Projects}/>
                   <Route path="/projects/:id" component={ProjectItem}/>
                   <Route path="/about-us" component={Aboutme}/>
+                  <Route path="/contact-us" component={Contactus}/>
                   <Route path="/beatnik-records" component={Music}/>
                 </Switch>
               </CSSTransition>
@@ -56,7 +56,7 @@ const App = ({location}) => {
                 <div className="meta_info">{Moment(CurrentDate).format('HH:mm:ss')}</div>
                 <div className="meta_info last">
                   <b>E:</b>
-                  <a href="mailto:freddie@greaterthannice.com?Subject=Hello" target="_top"> Contact Me</a>
+                  <a href="mailto:freddie@greaterthannice.com?Subject=Hello" target="_top"> Contact Us</a>
                 </div>
               </div>
             </aside>
