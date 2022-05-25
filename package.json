@@ -45,7 +45,7 @@
     "react-addons-css-transition-group": "^15.6.2",
     "react-animate-on-scroll": "^1.6.0",
     "react-burger-menu": "^2.7.0",
-    "react-dev-utils": "^4.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^15.6.2",
     "react-headrooms": "^1.0.6",
     "react-hover": "^1.4.0",
